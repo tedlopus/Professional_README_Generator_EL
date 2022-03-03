@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/tedlopus/Professional_README_Generator_EL/issues"
   },
-  "homepage": "https://github.com/tedlopus/Professional_README_Generator_EL#readme"
+  "homepage": "https://github.com/tedlopus/Professional_README_Generator_EL#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
