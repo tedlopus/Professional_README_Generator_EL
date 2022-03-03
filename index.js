@@ -81,8 +81,11 @@ return inquirer.prompt([
 };
 
   // Function that creates the README
-  function generateReadMe() {
-      fs.writeFile("README.md", prompts, (err) =>
-      err ? console.log(err) : console.log("Generating README...")
-    );
-  };
+  const init = () => {
+      prompts()
+      .then((data) => fs.writeFileSync('README.md', data))
+      .then(() => console.log('Generating README....'))
+      .catch((err) => console.error(err));
+  }
+
+  init();
