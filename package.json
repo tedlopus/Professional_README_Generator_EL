@@ -1,0 +1,20 @@
+{
+  "name": "professional_readme_generator_el",
+  "version": "1.0.0",
+  "description": "This is a README generator that prompts users with questions and automatically creates a README which in turn will save the user time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedlopus/Professional_README_Generator_EL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tedlopus/Professional_README_Generator_EL/issues"
+  },
+  "homepage": "https://github.com/tedlopus/Professional_README_Generator_EL#readme"
+}
