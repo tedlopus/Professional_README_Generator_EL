@@ -1,29 +1,31 @@
-# kfgkfksj
+# tedlopus
+
+  undefined
 
   ## Description
-  kdjflskdfj
+  tedlopus
   
   ## Table of Contents
-  lskdjfsdl
+  tedlopus
   
   ## Installation
-  Command to install dependencies: lksjfsd
+  Command to install dependencies: tedlopus
 
-  Steps to install project: lskdjflswrf
+  Steps to install project: tedlopus
 
   ## Usage
-  ldjsflsidfj
+  tedlopus
 
   ## License
-  GNU General Public License v3.0
+  The Unlicense
 
   ## Credits
-  lskdjf
+  tedlopus
 
   ## Tests
-  lskdjfserf
+  tedlopus
   
   ## Contact Info
-  Please contact me at tedlopus@gmail.com, for any further questions you have regarding this project.
+  Please contact me at tedlopus, for any further questions you have regarding this project.
 
   Please visit https://github.com/tedlopus to see more of my projects!
