@@ -15,29 +15,32 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ## Description
-
+  ${data.description}
   
   ## Table of Contents
-
+  ${data.contents}
   
   ## Installation
+  Command to install dependencies: ${data.install}
 
+  Steps to install project: ${data.steps}
 
   ## Usage
-
+  ${data.instructions}
 
   ## License
+  ${data.license}
 
-
-  ## Contribution
-
+  ## Credits
+  ${data.credits}
 
   ## Tests
-
+  ${data.test}
   
+  ## Contact Info
+  Please contact me at ${data.email}, for any further questions you have regarding this project.
 
-
-
+  Please visit https://github.com/${data.github} to see more of my projects!
 `;
 }
 

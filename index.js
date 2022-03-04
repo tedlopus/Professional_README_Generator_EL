@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 const prompts = () => {
 return inquirer.prompt([
@@ -16,7 +17,7 @@ return inquirer.prompt([
     {
       type: "input",
       message: "Please enter the title of your project.",
-      name: "projectname",
+      name: "title",
     },
     {
       type: "input",
@@ -81,11 +82,24 @@ return inquirer.prompt([
 };
 
   // Function that creates the README
-  const init = () => {
-      prompts()
-      .then((data) => fs.writeFileSync('README.md', data))
-      .then(() => console.log('Generating README....'))
-      .catch((err) => console.error(err));
-  }
+  const writeFile = data => {
+      fs.writeFile('README.md', data, err => {
+          if (err) {
+              console.log(err);
+              return;
+          } else {
+              console.log("Generating README...")
+          }
+      })
+  };
 
-  init();
+  prompts()
+  .then(answers => {
+      return generateMarkdown(answers);
+  })
+  .then(data => {
+      return writeFile(data);
+  })
+  .catch(err => {
+      console.log(err)
+  })
